@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": " project for bus scheduling",
   "main": "index.js",
+  "start": "node index.js",
   "dependencies": {
     "express": "^4.21.2"
   },
