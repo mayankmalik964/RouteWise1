@@ -8,8 +8,11 @@ const moragn = require('morgan');
 app.use(cors());
 app.use(moragn('dev'));
 app.use(express.json());
-
 //routes
+app.use('*', (req, res, next) => {
+    console.log('Request was made to: ' + req.originalUrl);
+    return next();
+});
 
 //error handling
 app.use(errorhandler());
