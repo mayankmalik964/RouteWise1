@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   overflow: hidden;
+}
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: -40px;
+
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+   
+    border-radius: 10px;
+}
+.logo{
+    margin: 5px;
+    padding: 0px;
+}
+.signupwg{
+    border-radius: 4px;
+    background-color: white;
+    padding: 0px;
+    border-color: lightgrey;
+    font-size: 10px;
+    margin-top: 2px;
+    FONT-WEIGHT: 500;
+    height: 15px;
+    width: 169.6px
+
+}
