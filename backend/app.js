@@ -3,7 +3,7 @@ const app = express();
 const errorhandler = require('errorhandler');
 const cors=require('cors');
 const moragn = require('morgan');
-
+const userRoute=require('./routes/userRoutes')
 //middlewares
 app.use(cors());
 app.use(moragn('dev'));
@@ -12,6 +12,7 @@ app.use(express.json());
 app.use('/api',(req,res,next)=>{
     res.send('Hello from the API');
 });
+app.use('/user',userRoute);
 app.use('*', (req, res, next) => {
     console.log('Request was made to: ' + req.originalUrl);
     return next();
