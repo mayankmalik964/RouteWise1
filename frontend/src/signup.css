@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+   overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Apply to entire page */
+}
+
+h2, h4 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 300;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+.signupcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 40vw;
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: -40px;
+
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: x-small;
+   
+   
+}
+.logo{
+    margin: 5px;
+    padding: 0px;
+}
+.signupwg{
+    border-radius: 4px;
+    background-color: white;
+    padding: 0px;
+    border-color: lightgrey;
+    font-size: 10px;
+    margin-top: 2px;
+    FONT-WEIGHT: 500;
+    height: 15px;
+    width: 169.6px
+
+}
+.outer{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-around;
+  
+}
+.imageofroutewise{
+    height: 400px;
+    width:45vw;
+}
