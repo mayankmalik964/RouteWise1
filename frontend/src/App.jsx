@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg';
 
 import './App.css';
 import Signup from './signup';  // ✅ Capitalized Component Name
-
+import Home from './home';
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Signup />  {/* ✅ Capitalized Component Usage */}
+     {/* //ignup />  ✅ Capitalized Component Usage */}
+      <Home/>
     </>
   );
 }
