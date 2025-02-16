@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+/* General Layout */
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+/* Logo */
+.logo2 {
+    position: fixed;
+    top: 1rem;
+    height: 4rem;
+    width: 11rem;
+}
+
+/* Sign In Container */
+.signin-container {
+    height: 30rem;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.signin-header {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+.signin-subtext {
+    color: grey;
+    font-size: 1em;
+}
+
+/* Google Sign In Button */
+.signin-google {
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    font-size: 0.7em;
+    margin-top: 1em;
+    width: 17em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.google-button-content {
+    display: flex;
+    align-items: center;
+}
+
+.google-logo {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* OR Separator */
+.or-text {
+    font-size: 0.8em;
+    margin: 0.5em;
+}
+
+/* Form Styles */
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.signin-form label {
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+}
+
+.signin-form input {
+    color: grey;
+    background-color: white;
+    font-size: 1.1em;
+    width: 90%;
+    height: 3em;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sign In Button */
+.signin-button {
+    width: 90%;
+    height: 3em;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sign Up Link */
+.signup-link {
+    margin-top: 1em;
+    margin-left: 3.1em;
+    font-size: 1.3em;
+    color: black;
+}
+
+.signup-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Image Container */
+.imageofroutewisecontainer {
+    flex-shrink: 0;
+    max-width: 50%;
+}
+
+.imageofroutewise {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .outer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .signin-container {
+        width: 90%;
+    }
+
+    .imageofroutewisecontainer {
+        display: none;
+    }
+}
