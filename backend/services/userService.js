@@ -24,8 +24,8 @@ const login=async(credential)=>{
     throw new Error("Invalid credentials");
     const token = jwt.sign(
         { id: user.id, email: user.email },
-        config.JWT_SECRET,  // Ensure this is the same everywhere
-        { expiresIn: config.JWT_EXPIRES_IN, algorithm: "HS256" } // Explicitly set algorithm
+        config.JWT_SECRET,  
+        { expiresIn: config.JWT_EXPIRES_IN, algorithm: "HS256" }
     );
     return token;
 }
